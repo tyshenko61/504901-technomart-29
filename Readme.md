@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Елена Тыщенко](https://up.htmlacademy.ru/htmlcss/29/user/504901).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Петухов] (https://htmlacademy.ru/profile/yaroslav).
 
 ---
 
