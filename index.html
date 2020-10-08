@@ -19,9 +19,9 @@
           <input type="search" placeholder="Поиск:">
           <button type="submit"></button>
         </form>
-        <a class="button button-bookmarks" href="#">Закладки</a>
-        <a class="button button-cart" href="#">Корзина</a>
-        <a class="button button-order" href="#">Оформить заказ</a>
+        <a class="link-bookmarks" href="#">Закладки</a>
+        <a class="link-cart" href="#">Корзина</a>
+        <a class="link-order" href="#">Оформить заказ</a>
       </div>
       <section class="header-contacts">
         <h2 class="visually-hidden">Контакты и вход</h2>
@@ -34,8 +34,10 @@
           <a class="header-company-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="header-company-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <a class="button login-in" href="#">Войти</a>
-        <a class="button registration" href="#">Регистрация</a>
+        <div class="user-navigation">
+          <a class="user-navigation-login-in" href="#">Войти</a>
+          <a class="user-navigation-registration" href="#">Регистрация</a>
+        </div>
       </section>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -54,15 +56,15 @@
         <h2 class="visually-hidden">Товары и услуги</h2>
         <div class="offers offers-materials new">
           <h3 class="offers-heading">Материалы</h3>
-          <a class="button button-products" href="#">На любой вкус</a>
+          <a class="offers-button" href="#">На любой вкус</a>
         </div>
         <div class="offers offers-tools">
           <h3 class="offers-heading">Инструмент</h3>
-          <a class="button button-products" href="#">На все случаи</a>
+          <a class="offers-button" href="#">На все случаи</a>
         </div>
-        <div class="offers  offers-technics">
+        <div class="offers offers-technics">
           <h3 class="offers-heading">Техника</h3>
-          <a class="button button-products" href="#">Для стройки</a>
+          <a class="offers-button" href="#">Для стройки</a>
         </div>
         <div class="slider">
           <div class="slider-item">
@@ -71,16 +73,16 @@
               ПЕРФОРАТОРЫ
               <span class="slider-slogan">Настоящие мужские игрушки</span>
             </p>
-            <a class="button button-red" href="catalog.html">Открыть каталог</a>
+            <a class="button-red" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
         <div class="offers offers-discounts">
           <h3 class="offers-heading">Скидки 50%</h3>
-          <a class="button button-products" href="#">На 350 товаров</a>
+          <a class="offers-button" href="#">На 350 товаров</a>
         </div>
         <div class="offers offers-delivery">
           <h3 class="offers-heading">Доставка </h3>
-          <a class="button button-products" href="#">Бесплатно</a>
+          <a class="offers-button" href="#">Бесплатно</a>
         </div>
       </section>
 
@@ -130,7 +132,6 @@
                 Перфоратор BOSCH<br>
                 <span class="popular-list-item-brand">BFG 2000</span>
               </p>
-              <p class="old-cost"></p>
               <p class="new-cost">12500 Р.</p>
             </a>
           </li>
@@ -139,39 +140,39 @@
       <section class="popular">
         <div class="popular-heading">
           <h2 class="popular-heading-caption">Популярные производители:</h2>
-          <a class="button button-red" href="#">Все производители</a>
+          <a class="button-red" href="#">Все производители</a>
         </div>
         <ul class="popular-list">
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/220x145" width="220" height="145"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/220x145" width="220" height="145"
                                                        alt="Bosch"></a>
           </li>
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/123x40" width="123" height="40"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/123x40" width="123" height="40"
                                                        alt="Makita"></a>
           </li>
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/146x44" width="146" height="44"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/146x44" width="146" height="44"
                                                        alt="DeWALT"></a>
           </li>
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/200x75" width="200" height="75"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/200x75" width="200" height="75"
                                                        alt="Интерскол"></a>
           </li>
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/169x31" width="169" height="31"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/169x31" width="169" height="31"
                                                        alt="Hitachi"></a>
           </li>
-          <li>
+          <li class="popular-list-item">
             <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/121x73" width="121" height="73"
                                                        alt="LG"></a>
           </li>
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/151x96" width="151" height="96"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/151x96" width="151" height="96"
                                                        alt="AEG"></a>
           </li>
-          <li>
-            <a class="popular-list-link" href="#"><img src="https://via.placeholder.com/204x69" width="204" height="69"
+          <li class="popular-list-item">
+            <a href="#"><img src="https://via.placeholder.com/204x69" width="204" height="69"
                                                        alt="Metabo"></a>
           </li>
         </ul>
@@ -281,15 +282,15 @@
           Все права защищены
         </p>
         <ul class="main-footer-bottom-social-list">
-          <li class="main-footer-bottom-social-list-item">
+          <li>
             <a class="social-button" href="#"><img src="https://via.placeholder.com/44x44" width="44" height="44"
                                                    alt="ВКонтакте"></a>
           </li>
-          <li class="main-footer-bottom-social-list-item">
+          <li>
             <a class="social-button" href="#"><img src="https://via.placeholder.com/44x44" width="44" height="44"
                                                    alt="Фэйсбук"></a>
           </li>
-          <li class="main-footer-bottom-social-list-item">
+          <li>
             <a class="social-button" href="#"><img src="https://via.placeholder.com/44x44" width="44" height="44"
                                                    alt="Инстаграм"></a>
           </li>

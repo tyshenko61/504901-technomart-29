@@ -57,14 +57,16 @@ img {
   height: auto;
 }
 
-.button {
-  text-decoration: none;
-  width: 150px;
-  display: block;
-}
-
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -76,7 +78,7 @@ img {
   background: var(--basic-menu);
 }
 
-.search, .button-bookmarks, .button-cart, .button-order {
+.search, .top-menu a {
   color: var(--white);
 }
 
@@ -93,25 +95,25 @@ img {
   background-color: var(--error);
 }
 
-.button-order {
+.link-order {
   background-color: var(--basic-green);
 }
 
-.button-cart:focus,
-.button-bookmarks:focus,
-.button-order:focus {
+.link-cart:focus,
+.link-bookmarks:focus,
+.link-order:focus {
   color: var(--white50);
 }
 
-.button-order:hover {
+.link-order:hover {
   background-color: var(--success);
 }
 
-.button-bookmarks:focus {
+.link-bookmarks:focus {
   background: var(--basic-active);
 }
 
-.button-order:focus {
+.link-order:focus {
   background-color: var(--basic-green);
 }
 
@@ -135,21 +137,22 @@ img {
   text-align: center;
 }
 
-.login-in,
-.registration {
+.user-navigation-login-in,
+.user-navigation-registration {
   font-size: 21px;
+  line-height: 21px;
   color: var(--black);
   background: var(--black01);
   text-align: center;
 }
 
-.login-in:hover,
-.registration:hover {
+.user-navigation-login-in:hover,
+.user-navigation-registration:hover {
   color: var(--basic-red);
 }
 
-.login-in:focus,
-.registration:focus {
+.user-navigation-login-in:focus,
+.user-navigation-registration:focus {
   color: var(--basic-greylight);
 }
 
@@ -193,12 +196,15 @@ img {
   font-weight: bold;
 }
 
-.button-products {
+.button-red,.offers-button {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
+}
+
+.offers-button {
   background: var(--white30);
 }
 
@@ -225,15 +231,12 @@ img {
   font-weight: normal;
   display: block;
   text-transform: none;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .button-red {
   background: var(--basic-red);
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
 }
 
 .offers-discounts {
