@@ -18,8 +18,13 @@
   --white: #FFFFFF;
   --black: #000000;
   --black01: rgba(0, 0, 0, 0.0001);
+  --black30: rgba(0, 0, 0, 0.3);
   --white50: rgba(255, 255, 255, 0.5);
   --white30: rgba(255, 255, 255, 0.3);
+  --background-page-heading: #F2F6F8;
+  --background-page-subheading: #F7F3EC;
+  --shadow-green-button: #367315;
+  --border-paginate: #E5E5E5;
 
 
   --special-ylellow: #FFBF47;
@@ -67,6 +72,26 @@ img {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.list-style-none
+{
+  list-style: none;
+}
+
+.services-slogan,
+.services-content-description,
+.content-company-slogan,
+.content-company-delivery,
+.content-contacts-address,
+.card,
+.breadcrumbs,
+.filter-caption,
+.sort-caption,
+.sort-link,
+.new-cost,
+.pagination-list,
+.about-product p {
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 /* header */
@@ -138,12 +163,19 @@ img {
 }
 
 .user-navigation-login-in,
-.user-navigation-registration {
+.user-navigation-registration,
+.user-navigation-authorized {
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
   background: var(--black01);
   text-align: center;
+}
+
+.user-navigation-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black);
 }
 
 .user-navigation-login-in:hover,
@@ -161,15 +193,12 @@ img {
 }
 
 .site-navigation {
-  list-style: none;
   color: var(--white);
 }
 
 .site-navigation-item {
   color: var(--white);
   text-decoration: none;
-  display: block;
-  width: 200px;
 }
 
 .site-navigation-item:hover {
@@ -202,6 +231,10 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
+}
+
+.page-title {
+  background: var(--background-page-heading);
 }
 
 .offers-button {
@@ -252,7 +285,7 @@ img {
   background: var(--basic-popular);
 }
 
-.popular-heading-caption {
+.popular-heading-caption, .page-title  {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -260,18 +293,16 @@ img {
   color: var(--basic-navigation);
 }
 
-.popular-list {
-  list-style: none;
-  font-family: "PT Sans";
+.card, .new-cost {
   font-weight: bold;
   text-align: center;
 }
-
+/*
 .popular-list-link, .services-list-link {
   text-decoration: none;
 }
-
-.popular-list-item-product {
+*/
+.card-product-name {
   line-height: 20px;
   color: var(--black);
 }
@@ -290,6 +321,9 @@ img {
 .new-cost {
   background: var(--basic-red);
   color: var(--white);
+  border: none;
+  width: 141px;
+  height: 38px;
 }
 
 .services {
@@ -314,14 +348,12 @@ img {
 .content-company-slogan,
 .content-company-delivery,
 .content-contacts-address {
-  font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
 }
 
 .services-list {
-  list-style: none;
   background: var(--basic-navigation);
 }
 
@@ -333,17 +365,12 @@ img {
 }
 
 .content-transport-company-list {
-  list-style: none;
   color: var(--black);
 }
 
 /* footer */
 .top-footer {
   background: var(--basic-navigation);
-}
-
-.main-footer-menu-list, .main-footer-list-links, .main-footer-bottom-social-list {
-  list-style: none;
 }
 
 .main-footer-menu-item a, .main-footer-address, .main-footer-address a {
@@ -368,4 +395,103 @@ img {
   background: var(--basic-red);
   padding-top: 20px;
   padding-left: 40px;
+}
+
+/* page catalog */
+.breadcrumbs,
+.filter-caption,
+.sort-caption,
+.sort-link {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs, .filter-caption, .sort-caption  {
+  color: var(--black);
+  font-weight: normal;
+}
+
+.filter-caption, .sort {
+  background: var(--background-page-subheading);
+}
+
+.sort-link {
+  color: var(--black30);
+  border-bottom: 1px dashed var(--basic-red);
+}
+
+.sort-link:focus {
+  color: var(--basic-red);
+}
+
+.sort-link:hover {
+  color: var(--black);
+  border-bottom: 1px dashed var(--basic-red);
+}
+
+.sort-link-current {
+  color: var(--basic-red);
+  border: none;
+}
+
+/* кнопки на карточке */
+.button-buy, .button-bookmarks {
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 135px;
+  height: 38px;
+}
+
+.button-buy {
+  border: none;
+  background: var(--basic-green);
+  box-shadow: inset 0 -3px 0 var(--shadow-green-button);
+  color: var(--white);
+}
+
+.button-bookmarks {
+  border: 3px solid var(--basic-green);
+  box-sizing: border-box;
+  color: var(--basic-navigation);
+}
+
+.pagination-item a, .pagination-item-next a {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--black);
+  display: block;
+  height: 38px;
+  background: var(--white);
+  border: 1px solid var(--border-paginate);
+  box-sizing: border-box;
+}
+
+.pagination-item a {
+  width: 38px;
+  padding: 10px 15px;
+}
+
+.pagination-item-next a {
+  width: 140px;
+  padding: 10px 31px;
+  text-transform: uppercase;
+}
+.about-product {
+  background: var(--basic-background);
+  color: var(--black);
+}
+.about-product h2 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.about-product p {
+  font-size: 13px;
+  line-height: 24px;
 }
