@@ -15,18 +15,24 @@
         <div class="main-header-wrapper">
             <div class="top-menu">
               <a class="main-header-logo" href="index.html">
-                <p class="visually-hidden">Техномарт</p>
-              </a>
-              <form class="search">
-                <label class="search-label" for="search">Поиск:</label>
-                <input class="search-input" type="search" name="search" id="search">
-                <svg class="find-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                <svg role="img" aria-label="Логотип сайта Техномарт" class="header-logo-text" width="108" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M103.847 2.659v14.79h-2.113V2.66h-3.756V1.015h9.626V2.66h-3.757zm-8.135 8.698a3.02 3.02 0 01-1.385.986c-.556.196-1.217.294-1.984.294a12 12 0 01-1.22-.07c-.455-.048-.83-.102-1.128-.165v5.048h-2.113V1.25a11.07 11.07 0 011.796-.364 16.94 16.94 0 011.96-.106c.94 0 1.738.098 2.396.294.657.195 1.19.52 1.596.974.407.454.704 1.057.892 1.808.188.751.282 1.683.282 2.794 0 1.142-.09 2.097-.27 2.864-.18.767-.454 1.382-.822 1.843zm-1.197-6.82c-.118-.564-.301-1.01-.552-1.338a1.995 1.995 0 00-.95-.693c-.384-.133-.842-.2-1.374-.2h-1.644v8.687h1.644c.532 0 .99-.066 1.373-.2.384-.132.7-.363.951-.692.25-.329.434-.775.552-1.338.117-.564.176-1.268.176-2.113s-.059-1.55-.176-2.113zM82.6 13.224h-4.696l-1.056 4.226h-2.114l3.992-16.435h3.052l3.991 16.435h-2.113L82.6 13.224zm-2.301-9.861h-.094l-1.949 8.217h3.992l-1.95-8.217zM70.156 5.24h-.117l-3.405 10.096h-2.113L61.117 5.24H61l-.705 12.209h-2.113l.94-16.435h2.582l3.827 11.27h.094l3.827-11.27h2.582l.94 16.435H70.86L70.157 5.24zM54.38 15.924c-.438.642-.967 1.095-1.585 1.361-.618.267-1.326.4-2.125.4-.798 0-1.506-.133-2.125-.4-.618-.266-1.146-.72-1.584-1.361-.439-.642-.771-1.507-.998-2.595-.227-1.087-.34-2.453-.34-4.097 0-1.643.113-3.009.34-4.097.227-1.087.56-1.952.998-2.594.438-.642.966-1.096 1.584-1.362C49.163.913 49.871.78 50.67.78c.799 0 1.507.133 2.125.4.618.265 1.147.72 1.585 1.361.438.642.77 1.507.998 2.594.227 1.088.34 2.454.34 4.097 0 1.644-.113 3.01-.34 4.097-.227 1.088-.56 1.953-.998 2.595zM53.358 5.758c-.165-.908-.38-1.628-.646-2.16-.266-.533-.58-.9-.94-1.104a2.218 2.218 0 00-1.103-.305c-.375 0-.743.102-1.103.305-.36.204-.673.571-.94 1.104-.265.532-.48 1.252-.645 2.16-.164.907-.247 2.066-.247 3.474 0 1.41.083 2.567.247 3.475.164.908.38 1.628.646 2.16.266.532.579.9.939 1.104.36.203.728.305 1.103.305.376 0 .744-.102 1.104-.305.36-.204.673-.572.939-1.104.266-.532.481-1.252.645-2.16.165-.908.247-2.066.247-3.475 0-1.408-.082-2.567-.246-3.474zM40.69 9.937h-4.93v7.513h-2.114V1.015h2.114v7.278h4.93V1.015h2.113V17.45h-2.113V9.937zM29.54 17.45l-2.935-7.044-2.935 7.044h-2.113l3.522-8.452-3.17-7.983h2.113l2.583 6.574 2.582-6.574H31.3l-3.17 7.983 3.523 8.452H29.54zM12.283 1.015h7.983V2.66h-5.87v5.4h5.165v1.643h-5.165v6.104h5.87v1.644h-7.983V1.015zM6.648 17.45H4.535V2.659H.78V1.015h9.626V2.66H6.648v14.79z" fill="#fff"/>
                 </svg>
+              </a>
+              <form class="search" action="https://echo.htmlacademy.ru" method="GET">
+<!--                <label class="search-label" for="search">Поиск:</label>-->
+                <input class="search-input" type="search" name="search" id="search" placeholder="Поиск:">
+                <button class="btn-search">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                  </svg>
+                </button>
               </form>
-              <a class="link-bookmarks" href="#">Закладки: 0</a>
-              <a class="link-cart" href="#">Корзина: 0</a>
-              <a class="link-order" href="#">Оформить заказ</a>
+              <ul class="top-menu-list list-style-none">
+                <li><a class="link-bookmarks" href="#">Закладки: <span class="count-bookmarks">0</span></a></li>
+                <li><a class="link-cart" href="#">Корзина: <span class="total-cost">0</span></a></li>
+                <li><a class="link-order" href="#">Оформить заказ</a></li>
+              </ul>
             </div>
         </div>
       </div>
@@ -77,21 +83,25 @@
             <a class="offers-button" href="#">Для стройки</a>
           </div>
           <div class="slider">
-            <div class="slider-item visually-hidden">
-              <img src="img/slide-perforator.jpg" width="620" height="266" alt="Мужчина с перфоратором">
-              <div class="slide-description">
-                <h3 class="slider-caption">ПЕРФОРАТОРЫ</h3>
-                <p class="slider-slogan">Настоящие мужские игрушки</p>
-                <a class="button-red button-open-catalog" href="catalog.html">Открыть каталог</a>
-              </div>
-            </div>
-            <div class="slider-item">
-              <img src="img/slide-drill.jpg" width="620" height="266" alt="Мужчина с дрелью">
-              <div class="slide-description">
+            <ul class="slider-list">
+              <li class="slider-item slide-one">
                 <h3 class="slider-caption">Дрели</h3>
                 <p class="slider-slogan">Соседям на радость!</p>
                 <a class="button-red button-open-catalog" href="catalog.html">Открыть каталог</a>
-              </div>
+              </li>
+              <li class="slider-item slide-two slide-current">
+                <h3 class="slider-caption">ПЕРФОРАТОРЫ</h3>
+                <p class="slider-slogan">Настоящие мужские игрушки</p>
+                <a class="button-red button-open-catalog" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
+            <div class="slider-controls">
+              <button type="button" aria-label="Дрели"></button>
+              <button class="current" type="button" aria-label="Перфораторы"></button>
+            </div>
+            <div class="slider-controls-arrows">
+              <button class="controls-arrow controls-arrow-left" type="button" aria-label="Назад"></button>
+              <button class="controls-arrow controls-arrow-right" type="button" aria-label="Вперед"></button>
             </div>
           </div>
           <div class="offers offers-discounts">
@@ -125,7 +135,7 @@
               </div>
             </li>
             <li>
-              <div class="card">
+              <div class="card new">
                 <a class="card-link" href="#">
                   <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                 </a>
@@ -151,7 +161,7 @@
               </div>
             </li>
             <li>
-              <div class="card">
+              <div class="card new">
                 <a class="card-link" href="#">
                   <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                 </a>
