@@ -55,6 +55,7 @@
   --error: #BA2732;
   --find-icon: #69717F;
   --button-red-hover: #CA2C37;
+  --check-button-hover :#B5B5B5;
 
 
   --light-gray: #EAEAEA;
@@ -669,12 +670,13 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   background-repeat: no-repeat;
 }
+
 .offers-materials {
   background: var(--special-ylellow);
   grid-area: materials;
 }
 
-.offers-materials,
+/*.offers-materials,*/
 .offers-heading,
 .car-message {
   font-size: 24px;
@@ -687,6 +689,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .offers-heading {
   margin-bottom: 14px;
 }
+
 .offers-materials::after {
   top: 31px;
   right: 43px;
@@ -694,6 +697,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 65px;
   background-image: url("../img/icon-materials.svg");
   background-position: 0 0;
+  z-index: 10;
 }
 
 .button-red,
@@ -872,11 +876,14 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  height: 318px;
+  min-height: 318px;
   width: 220px;
   border: 1px solid var(--light-gray);
   box-sizing: border-box;
   position: relative;
+}
+.new {
+  flex-basis: 100%;
 }
 
 .new:before {
@@ -903,6 +910,10 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
   transform: rotate(45deg);
   z-index: 2;
+}
+
+.unvisible {
+  display: none;
 }
 
 .popular-products-list {
@@ -1025,11 +1036,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .popular-list-item a:hover {
    /*filter: drop-shadow(0px 4px 20px var(--black15));*/
+  box-shadow: 0 4px 20px var(--black15);
 }
 
 .popular-list-item a:active {
   /*filter: drop-shadow(0px 4px 20px var(--black15));*/
-
+  box-shadow: 0 4px 20px var(--black15);
   opacity: 0.5;
 }
 
@@ -1291,7 +1303,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .content-contacts-address {
   margin-top: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   box-sizing: border-box;
 }
 
@@ -1792,45 +1804,42 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 20px;
 }
 
-/*.filter-input-checkbox + label:before {*/
-.square {
+.uncheck {
   position: absolute;
   left: 0;
   top: -1px;
-  /*content: "";*/
   width: 23px;
   height: 23px;
-  /*background-image: url("../img/checkbox-off.svg");*/
   cursor: pointer;
 }
 
 .check {
   position: absolute;
-  left:  0;
+  left: 0;
   top: -1px;
-  /*content: "";*/
   width: 27px;
   height: 23px;
-  /*background-image: url("../img/checkbox-off.svg");*/
   cursor: pointer;
 }
 
-.uncheck path {
-  fill-opacity: 0;
+.filter-input-checkbox:checked + label .check,
+.filter-input-checkbox + label .uncheck {
+  display: block;
+  }
+
+.filter-input-checkbox + label .check,
+.filter-input-checkbox:checked + label .uncheck {
+  display: none;
 }
 
-/*.filter-input-checkbox:checked + label:before {*/
-/*  position: absolute;*/
-/*  left: 0;*/
-/*  content: "";*/
-/*  width: 23px;*/
-/*  height: 23px;*/
-/*  background-image: url("../img/checkbox-on.svg");*/
-/*  cursor: pointer;*/
-/*}*/
+.filter-input-checkbox:checked:hover + label .check path,
+.filter-input-checkbox:hover + label .uncheck path {
+  fill: var(--check-button-hover);
+}
 
-
-
+.filter-input-checkbox:disabled {
+  opacity: 0.3;
+}
 /* radio */
 .filter-supply {
   margin-top: 17px;
@@ -1857,6 +1866,10 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
+.filter-input-radio:hover + label:before {
+  box-shadow: 0 0 0 4px var(--check-button-hover);
+}
+
 .filter-input-radio:checked + label:before {
   background-color: var(--basic-greylight);
   box-shadow: 0 0 0 4px var(--basic-greylight);
@@ -1865,10 +1878,18 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
+.filter-input-radio:checked:hover + label:before {
+  background-color: var(--check-button-hover);
+  box-shadow: 0 0 0 4px var(--check-button-hover);
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .filter-input-checkbox:disabled + label,
 .filter-input-radio:disabled + label {
   color: var(--black);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .filter-btn {
