@@ -1571,8 +1571,7 @@ card:focus .card-button {
   /*position: relative;*/
 }
 
-.order-navigation-link,
-.personal-navigation-link {
+.personal-info-list-link {
   display: block;
   color: var(--basic-navigation);
   font-size: 16px;
@@ -1590,25 +1589,21 @@ card:focus .card-button {
   top: 7px;
 }
 
-.personal-info-list:hover .order-navigation-link,
-.personal-info-list:hover .personal-navigation-link
-{
+.personal-info-list-link:hover {
   color: var(--basic-red);
 }
 
-.personal-info-list:hover .order-navigation-link:before {
-  background: var(--basic-red);
-}
+/*.personal-info-list:hover .order-navigation-link:before {*/
+/*  background: var(--basic-red);*/
+/*}*/
 
-.personal-info-list:active .order-navigation-link,
-.personal-info-list:active .personal-navigation-link
-{
+.personal-info-list-link:active {
   color: var(--basic-greylight);
 }
 
-.personal-info-list:active .order-navigation-link:before {
-  background: var(--basic-greylight);
-}
+/*.personal-info-list:active .order-navigation-link:before {*/
+/*  background: var(--basic-greylight);*/
+/*}*/
 
 .user-info-list {
   margin: 3px 0 0 40px;
@@ -1661,6 +1656,7 @@ card:focus .card-button {
 .logout {
   display: block;
   position: relative;
+  color: var(--black);
 }
 
 .breadcrumbs, .filter-caption, .sort-caption  {
@@ -1837,7 +1833,7 @@ card:focus .card-button {
 }
 
 .filter-producer {
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .filter-price:after,
@@ -1948,7 +1944,7 @@ card:focus .card-button {
 
 .filter-btn {
   width: 220px;
-  margin-top: 12px;
+  margin-top: 13px;
   padding: 10px 0 10px 0;
   font-size: 13px;
   line-height: 18px;
@@ -2080,6 +2076,17 @@ card:focus .card-button {
   padding: 10px 0 10px 15px;
 }
 
+.button-buy:before {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  left: 29px;
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.3;
+}
+
 .button-bookmarks {
   border: 3px solid var(--basic-green);
   box-sizing: border-box;
@@ -2182,21 +2189,90 @@ card:focus .card-button {
   padding :0;
   box-sizing: border-box;
 }
+
 /* modal windows */
+/* Напишите нам */
+.modal {
+  position: fixed;
+  /*display: block;*/
+  /*display: none;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10;
+}
+
 .feedback-form {
   width: 620px;
   height: 430px;
+  top: 120px;
+  bottom: auto;
+  background-color: var(--white);
+  box-sizing: border-box;
+  border-top: 7px solid var(--basic-red);
+  filter: drop-shadow(0px 4px 20px var(--black15));
+  /*box-shadow: 0 4px 20px var(--black15);*/
+}
+
+.modal-feedback-wrapper {
+  position: relative;
+  width: 460px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding-top: 39px;
+  box-sizing: border-box;
 }
 
 .modal-feedback-footer {
-  height: 112px;
+  padding: 10px;
+  position: absolute;
+  width: 620px;
+  min-height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom: -108px;
+  left: -80px;
   background: var(--modal-feedback-footer);
+  box-sizing: border-box;
 }
 
-.write-us-name,
-.write-us-email,
-.write-us-text {
+.modal-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-form p {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-input,
+.modal-label {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--black);
+  margin-bottom: 11px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal-input {
+  width: 220px;
+  min-height: 38px;
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .modal-input::placeholder {
@@ -2205,12 +2281,78 @@ card:focus .card-button {
   color: var(--basic-palegray);
 }
 
+.text-letter {
+  width: 460px;
+  min-height: 114px;
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+  margin-bottom: 37px;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.modal-form p:nth-child(3) {
+  margin-top: 3px;
+  box-sizing: border-box;
+}
+
+.modal-close {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+}
+.modal-close::after,
+.modal-close::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 5px;
+  background: var(--basic-red);
+  right: -2px;
+  top: 11px;
+}
+
+.modal-close::after {
+  transform: rotate(45deg);
+}
+
+.modal-close::before {
+  transform: rotate(-45deg);
+}
+
+.modal-button {
+  width: 460px;
+  min-height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  background: var(--basic-red);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* карта */
 .map-popup {
   width: 943px;
   height: 449px;
   filter: drop-shadow(0px 4px 20px var(--black15));
-  background: url("../img/map.jpg") no-repeat;
+  /*background: url("../img/map.jpg") no-repeat;*/
+  border-top: 7px solid var(--basic-red);
 }
+
+.map-popup iframe {
+  border: none;
+}
+
+
 .car-popup {
   width: 620px;
   height: 282px;

@@ -363,6 +363,7 @@
           </ul>
 <!--          </div>-->
           <p class="footer-feedback">
+
             Обратная связь:
             <a class="footer-feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
@@ -373,31 +374,41 @@
         </div>
       </div>
     </footer>
-    <section class="visually-hidden modal feedback-form">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="modal-form" action="index.html" method="GET">
-        <p>
-          <label for="write-us-name">Ваше имя:</label>
-          <input class="modal-input" type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="write-us-email">Ваш e-mail:</label>
-          <input class="modal-input" type="email" id="write-us-email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="write-us-text">Текст письма:</label>
-          <textarea class="text-letter modal-input" name="text-letter" id="write-us-text" cols="60" rows="7"
-                    placeholder="В свободной форме"></textarea>
-        </p>
-        <div class="modal-feedback-footer">
-          <button class="modal-button button-red" type="submit">Отправить</button>
-        </div>
-      </form>
+
+    <section class="modal feedback-form">
+      <div class="modal-feedback-wrapper">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="modal-form" action="index.html" method="GET">
+          <p>
+            <label class="modal-label" for="write-us-name">Ваше имя:</label>
+            <input class="modal-input modal-input-name" type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label class="modal-label" for="write-us-email">Ваш e-mail:</label>
+            <input class="modal-input modal-input-email" type="email" id="write-us-email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label class="modal-label" for="write-us-text">Текст письма:</label>
+            <textarea class="text-letter modal-input" name="text-letter" id="write-us-text" cols="81" rows="4"
+                      placeholder="В свободной форме"></textarea>
+          </p>
+          <div class="modal-feedback-footer">
+            <button class="modal-button button-red" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-    <section class="visually-hidden modal map-popup">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+
+    <section class="modal map-popup">
+      <div class="modal-wrapper">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715590223!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602430245607!5m2!1sru!2sru"
+                allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
+                width="943" height="449">
+        </iframe>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </div>
     </section>
   </body>
 </html>
