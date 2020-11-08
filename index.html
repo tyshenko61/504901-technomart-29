@@ -125,9 +125,9 @@
               <button class="button-buy" type="button">Купить</button>
               <button class="button-bookmarks" type="button">В закладки</button>
             </div>
-            <a class="card-link" href="#">
+            <p class="card-link">
               <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </a>
+            </p>
             <p class="card-product-name">
               <span class="card-product-type">Перфоратор BOSCH</span>
               <span class="card-product-model">BFG 9000</span>
@@ -140,9 +140,9 @@
               <button class="button-buy" type="button">Купить</button>
               <button class="button-bookmarks" type="button">В закладки</button>
             </div>
-            <a class="card-link" href="#">
+            <p class="card-link">
               <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            </a>
+            </p>
             <p class="card-product-name">
               <span class="card-product-type">Перфоратор BOSCH</span>
               <span class="card-product-model">BFG 3000</span>
@@ -155,9 +155,9 @@
               <button class="button-buy" type="button">Купить</button>
               <button class="button-bookmarks" type="button">В закладки</button>
             </div>
-            <a class="card-link" href="#">
+            <p class="card-link">
               <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </a>
+            </p>
             <p class="card-product-name">
               <span class="card-product-type">Перфоратор BOSCH</span>
               <span class="card-product-model">BFG 6000</span>
@@ -170,9 +170,9 @@
               <button class="button-buy" type="button">Купить</button>
               <button class="button-bookmarks" type="button">В закладки</button>
             </div>
-            <a class="card-link" href="#">
+            <p class="card-link">
               <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            </a>
+            </p>
             <p class="card-product-name">
               <span class="card-product-type">Перфоратор BOSCH</span>
               <span class="card-product-model">BFG 2000</span>
@@ -293,7 +293,7 @@
                 Вы можете забрать товар сами,<br>
                 заехав в наш офис:
               </p>
-              <a href="https://yandex.ru/maps">
+              <a  class="map-link" href="https://yandex.ru/maps">
                 <img src="img/mapsmall.jpg" width="300" height="158" alt="Карта как нас найти">
               </a>
               <a class="button-write-us button-red" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите нам!</a>
@@ -337,7 +337,6 @@
             © 2010-2019 Компания «Техномарт»<br>
             <span>Все права защищены</span>
           </p>
-<!--          <div class="social-buttons-wrapper">-->
           <ul class="main-footer-bottom-social-list list-style-none">
             <li class="social-item">
               <a class="social-icon" href="#"><span class="visually-hidden">Вконтакте</span>
@@ -361,7 +360,6 @@
               </a>
             </li>
           </ul>
-<!--          </div>-->
           <p class="footer-feedback">
 
             Обратная связь:
@@ -379,21 +377,21 @@
       <div class="modal-feedback-wrapper">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="modal-form" action="index.html" method="GET">
-          <p>
+          <p class="input-text">
             <label class="modal-label" for="write-us-name">Ваше имя:</label>
             <input class="modal-input modal-input-name" type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
           </p>
-          <p>
+          <p class="input-text">
             <label class="modal-label" for="write-us-email">Ваш e-mail:</label>
             <input class="modal-input modal-input-email" type="email" id="write-us-email" name="email" placeholder="email@example.com">
           </p>
-          <p>
+          <p class="input-textarea">
             <label class="modal-label" for="write-us-text">Текст письма:</label>
-            <textarea class="text-letter modal-input" name="text-letter" id="write-us-text" cols="81" rows="4"
+            <textarea class="modal-input text-letter" name="text-letter" id="write-us-text" cols="81" rows="4"
                       placeholder="В свободной форме"></textarea>
           </p>
           <div class="modal-feedback-footer">
-            <button class="modal-button button-red" type="submit">Отправить</button>
+            <button class="modal-button" type="submit">Отправить</button>
           </div>
         </form>
       </div>
@@ -410,6 +408,7 @@
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
+    <script src="js/main-page.js"></script>
   </body>
 </html>
 
