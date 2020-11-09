@@ -7,14 +7,14 @@
       href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
   <header class="main-header">
     <div class="main-header-top">
       <div class="main-header-wrapper">
         <div class="top-menu">
-          <a class="main-header-logo" href="index.html">
+          <a class="main-header-logo">
             <svg role="img" aria-label="Логотип сайта Техномарт" class="header-logo-text" width="108" height="18"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -89,14 +89,20 @@
         </div>
         <div class="slider">
           <ul class="slider-list">
-            <li class="slider-item slide-one">
-              <h3 class="slider-caption">Дрели</h3>
-              <p class="slider-slogan">Соседям на радость!</p>
+            <li class="slider-item">
+              <img src="img/slide-drill.jpg" width="620" height="266" alt="Фотография мужчины с дрелью">
+              <div class="slider-info">
+                <h3 class="slider-caption">Дрели</h3>
+                <p class="slider-slogan">Соседям на радость!</p>
+              </div>
               <a class="button-red button-open-catalog" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-item slide-two slide-current">
-              <h3 class="slider-caption">ПЕРФОРАТОРЫ</h3>
-              <p class="slider-slogan">Настоящие мужские игрушки</p>
+            <li class="slider-item slide-current">
+              <img src="img/slide-perforator.jpg" width="620" height="266" alt="Фотография мужчины с перфоратором">
+              <div class="slider-info">
+                <h3 class="slider-caption">ПЕРФОРАТОРЫ</h3>
+                <p class="slider-slogan">Настоящие мужские игрушки</p>
+              </div>
               <a class="button-red button-open-catalog" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
@@ -429,7 +435,7 @@
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </div>
   </section>
-  <script src="js/main-page.js"></script>
+  <script src="js/main-page.min.js"></script>
   </body>
 </html>
 
