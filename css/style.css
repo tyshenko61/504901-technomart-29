@@ -405,9 +405,8 @@ input[type="search"]::-webkit-search-results-decoration {
   display: block;
   position: relative;
   width: 270px;
-  height: 45px;
   box-sizing: border-box;
-  padding: 8px 0 0 72px;
+  padding: 8px 0 8px 72px;
   margin: 3px 0 0 5px;
   border: 3px solid var(--white);
 }
@@ -424,7 +423,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header-company-address {
   font-size: 14px;
-  padding: 5px 0 0 15px;
+  padding: 4px 0 0 15px;
   margin: 0;
   box-sizing: border-box;
 }
@@ -440,10 +439,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .user-navigation-login-in {
-  padding: 14px 0 0 48px;
+  padding: 14px 0 12px 48px;
   margin: 3px 0 0 58px;
   width: 121px;
-  height: 45px;
   box-sizing: border-box;
   position: relative;
 }
@@ -459,10 +457,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .user-navigation-registration {
-  padding: 15px 0 0 26px;
+  padding: 15px 0 12px 26px;
   margin: 3px 0 0 10px;
   width: 150px;
-  height: 45px;
   box-sizing: border-box;
 }
 
@@ -625,8 +622,8 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 24px;
   top: 201px;
   width: 192px;
-  height: 38px;
   padding-top: 11px;
+  padding-bottom: 11px;
   box-sizing: border-box;
 }
 
@@ -641,7 +638,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .offers {
   position: relative;
   box-sizing: border-box;
-  height: 123px;
   margin: 0;
   padding: 20px 30px 21px 23px;
   overflow: hidden;
@@ -711,7 +707,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .offers-button {
   display: block;
   width: 135px;
-  min-height: 38px;
   text-align: center;
   padding: 10px 10px;
   font-family: inherit;
@@ -1246,8 +1241,8 @@ card:focus .card-button {
 
 .button-details,
 .button-write-us {
-  height: 38px;
   padding-top: 12px;
+  padding-bottom: 8px;
   display: block;
   position: absolute;
   margin-bottom: 0;
@@ -1276,7 +1271,6 @@ card:focus .card-button {
 
 /* Main footer */
 .top-footer {
-
 }
 
 .main-footer {
@@ -1374,8 +1368,9 @@ card:focus .card-button {
 .main-footer-list-links,
 .main-footer-menu-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  grid-gap: 58px;
+  grid-column-gap: 58px;
   box-sizing: border-box;
   margin: 0;
 }
@@ -1494,6 +1489,7 @@ card:focus .card-button {
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .personal-info-list-link {
@@ -2383,29 +2379,6 @@ card:focus .card-button {
 
   100% {
     transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes shake {
-
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
   }
 }
 
